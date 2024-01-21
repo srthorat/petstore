@@ -25,5 +25,5 @@ Rest Assured Automation Framework with **Java 8**, **TestNG** and **Cucumber** i
 * Run `mvn clean test`
 
 ### See Allure Report
-* Assuming that local setup for Allure report is in place - If not refer - [Allure Report installation] (https://allurereport.org/docs/gettingstarted-installation/) 
+* Assuming that local setup for Allure report is in place - If not refer [Allure Report installation](https://allurereport.org/docs/gettingstarted-installation/) 
 * Run `allure serve`

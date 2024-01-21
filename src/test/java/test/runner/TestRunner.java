@@ -4,7 +4,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features= {"classpath:features"},
         glue="io.swagger.petstore.stepdefinitions",
-        tags = "@Sanity"
+        tags = "@All_E2E"
 
 )
 

@@ -11,7 +11,7 @@ Rest Assured Automation Framework with **Java 8**, **TestNG** and **Cucumber** i
 7. CI/CD - Github Actions
 
 ## Getting Started Instructions
-### Local
+### Run Locally and view Allure report
 #### Clone to local
 * Run `git clone https://github.com/srthorat/petstore.git` 
 
@@ -27,7 +27,7 @@ Rest Assured Automation Framework with **Java 8**, **TestNG** and **Cucumber** i
 * Assuming that local setup for Allure report is in place - If not refer [Allure Report installation](https://allurereport.org/docs/gettingstarted-installation/) 
 * Run `allure serve`
 
-### Run Test using Github Action CI/CD
+### Run Test using Github Action CI/CD and view Allure report
 * Go to Actions tab - [Actions](https://github.com/srthorat/petstore/actions)
 * From Left, Below All workflows Select Workflow - [Java CI with Maven](https://github.com/srthorat/petstore/actions/workflows/petstore-ci.yml)
 * `Run workflow` dropdown will appear in right, Select that, then Keep `branch - main`, Hit `Run Workflow`

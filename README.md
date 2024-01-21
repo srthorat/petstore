@@ -16,6 +16,7 @@ This framework is designed to automate API testing for the PetStore application.
 5. [Allure Reports](https://allurereport.org/)
 6. [SLF4J Logger](https://www.slf4j.org/)
 7. [CI/CD - Github Actions](https://docs.github.com/en/actions)
+8. [Git](https://git-scm.com/)
 
 ## Getting Started Instructions
 ### Run Locally and view Allure report

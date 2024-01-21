@@ -1,0 +1,1 @@
+{id=79, category={id=234, name=dog}, name=Julia, photoUrls=[http://placeimg.com/640/480], tags=[{id=985, name=dog}], status=available}

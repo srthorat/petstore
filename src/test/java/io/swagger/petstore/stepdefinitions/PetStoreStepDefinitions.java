@@ -27,7 +27,7 @@ public class PetStoreStepDefinitions extends BaseTest {
 
     @Given("the PetStore API is accessible")
     public void givenThePetStoreAPIIsAccessible() {
-        log.info("Step: Validating the accessibility of the Pet Store API by making a GET request to '{}swagger.json'", baseUrl);
+        log.info("Step: Validating the accessibility of the Pet Store API by making a GET request to '{}/swagger.json'", baseUrl);
         response = given()
                 .spec(requestSpec)
                 .when()
@@ -99,10 +99,10 @@ public class PetStoreStepDefinitions extends BaseTest {
         Assert.assertEquals(response.getStatusCode(), 200);
     }
 
-   @Then("the response should be {int} and adhere to the expected JSON schema for updated pets")
+    @Then("the response should be {int} and adhere to the expected JSON schema for updated pets")
     public void thenTheResponseShouldAdhereToExpectedJsonSchemaForUpdatedPets(int statusCode) {
         log.info("Step: Validating response code and body against the expected JSON schema...");
-       Assert.assertEquals(response.getStatusCode(), statusCode);
+        Assert.assertEquals(response.getStatusCode(), statusCode);
         String schemaPath = "json-schemas/update-expected-schema.json";
         response.then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath(schemaPath));
         log.info("Step: JSON schema validation passed successfully.");
@@ -166,4 +166,3 @@ public class PetStoreStepDefinitions extends BaseTest {
     }
 
 }
-

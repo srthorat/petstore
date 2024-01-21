@@ -46,9 +46,10 @@ summary for the last run.
 ### Create a New Feature File
 1. Navigate to the src/test/resources/features directory.
 2. Create a new file named NewTestCase.feature.
-   `Example NewTestCase.feature:
+
+   ```Example NewTestCase.feature:
      Feature: New Test Case 
        Scenario: Description of the new scenario 
        Given some initial conditions
        When an action is performed
-       Then the expected outcome is verified`
+       Then the expected outcome is verified```

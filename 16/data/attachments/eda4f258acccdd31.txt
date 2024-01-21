@@ -1,0 +1,1 @@
+Response details: {"id":9223372036854755951,"category":{"id":7853,"name":"string"},"name":"Oskar_7853","photoUrls":["string"],"tags":[{"id":7853,"name":"IN_7853"}],"status":"Sold"}

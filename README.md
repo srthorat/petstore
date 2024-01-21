@@ -16,11 +16,14 @@ Rest Assured Automation Framework with **Java 8**, **TestNG** and **Cucumber** i
 
 ### Set up Dependencies 
 * Assuming that local setups for Maven and Java are already in place
+* If not refer 
+- [Java 8 Setup] (https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)
+- [Maven Setup] (https://www.baeldung.com/install-maven-on-windows-linux-mac)
 * Run `mvn clean install`
 
 ### Run Tests
 * Run `mvn clean test`
 
 ### See Allure Report
-* Assuming that local setup for Allure report is in place
+* Assuming that local setup for Allure report is in place - If not refer - [Allure Report installation] (https://allurereport.org/docs/gettingstarted-installation/) 
 * Run `allure serve`

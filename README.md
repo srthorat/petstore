@@ -43,9 +43,10 @@ running automatically, wait for it to complete.
 summary for the last run.
 
 ## Adding new Test cases
-### Create a New Feature File
+### Step 1: Create a New Feature File
 1. Navigate to the src/test/resources/features directory.
 2. Create a new file named NewTestCase.feature.
+3. Add meaningful BDD steps for the new test case scenario.
 
    ```Example NewTestCase.feature:
      Feature: New Test Case 
@@ -53,3 +54,11 @@ summary for the last run.
        Given some initial conditions
        When an action is performed
        Then the expected outcome is verified```
+   
+### Step 2: Implement Step Definitions
+1. Open `PetStoreStepDefinitions.java` or create new file located in `src/test/java/com/example/petstore/stepdefinitions.`
+2. Add step definitions for the new steps in the NewTestCase.feature file.
+
+### Step 3: Run the Test
+1. Run your test suite to execute the new test case.
+2. Verify that the test case runs successfully and produces the expected outcomes.

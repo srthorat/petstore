@@ -1,5 +1,5 @@
 # API Automation Framework to test [Swagger Pet Store API](https://petstore.swagger.io/).
-This framework is designed to automate API testing for the PetStore application. It integrates popular tools and libraries like **TestNG**, **Cucumber**, **Allure Reports**, **SLF4J Logger**, and **CI/CD - Github Actions**  to provide a robust and maintainable testing solution.
+This framework is designed to automate API testing for the PetStore application. It integrates popular tools and libraries like **RestAssured**, **TestNG**, **Cucumber**, **Allure Reports**, **SLF4J Logger**, and **CI/CD - Github Actions**  to provide a robust and maintainable testing solution.
 ## Framework Structure
 * The framework follows a standard Maven project structure:
   1. `src/test/java/io/swagger/petstore/base`: Contains BaseTest.java, the base class for test setup. 

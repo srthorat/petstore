@@ -41,3 +41,4 @@ build/
 ### allure reports
 allure-results
 /allure-results/
+.allure/

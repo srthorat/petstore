@@ -1,0 +1,1 @@
+Response details: {"id":9223372036854756735,"category":{"id":4598,"name":"string"},"name":"Oskar_4598","photoUrls":["string"],"tags":[{"id":4598,"name":"IN_4598"}],"status":"Sold"}

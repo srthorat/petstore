@@ -1,0 +1,1 @@
+Response details: {"id":9223372036854756466,"category":{"id":3094,"name":"string"},"name":"Oskar_3094","photoUrls":["string"],"tags":[{"id":3094,"name":"IN_3094"}],"status":"Pending"}

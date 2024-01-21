@@ -78,4 +78,19 @@
             <version>20210307</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.10.0</version>
+                <configuration>
+                    <resultsDirectory>${project.basedir}/allure-results</resultsDirectory>
+                    <reportVersion>2.14.0</reportVersion>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>

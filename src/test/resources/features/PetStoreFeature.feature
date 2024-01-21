@@ -8,7 +8,7 @@ Feature: Test various Pet Store Swagger API
     Then the response should adhere to the expected JSON schema
 
   @Sanity
-  Scenario: Update Pet Details
+  Scenario: User makes a PUT request to Update Pet Details using Random PET ID Saved in first test.
     Given the PetStore API is accessible
     And a random PET ID is available
     When the user makes a PUT request to the endpoint /pet with updated details
@@ -16,7 +16,8 @@ Feature: Test various Pet Store Swagger API
     And the updated details are saved for future use
 
   @Sanity
-  Scenario: Get details of a pet by ID
+  Scenario: User makes a GET request to fetch PET Details using Random PET ID Saved in first test, compares PET Details
+    received with PET Details updated in last test.
     Given a random PET ID is available
     When When the user makes a GET request to the endpoint /pet/{petID}
     Then the response should be 200 and adhere to the expected JSON schema for updated pets

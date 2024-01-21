@@ -1,4 +1,7 @@
 package io.swagger.petstore.utils;
+import io.qameta.allure.Allure;
+import io.qameta.allure.Step;
+import io.restassured.response.Response;
 import org.json.JSONArray;
 import org.json.JSONObject;
 public class Utils {
@@ -30,5 +33,21 @@ public class Utils {
         petJson.put("status", status);
 
         return petJson.toString();
+    }
+
+    // Attach text as a file to Allure report
+    @Step("{attachmentName}")
+    public static void attachText(String attachmentName, String text) {
+        Allure.addAttachment(attachmentName, "text/plain", text);
+    }
+
+    public static String getRequestDetails(String endpoint) {
+        // Customize this method to extract and format relevant request details
+        return "Request details for endpoint: " + endpoint;
+    }
+
+    public static String getResponseDetails(Response response) {
+        // Customize this method to extract and format relevant response details
+        return "Response details: " + response.getBody().asString();
     }
 }

@@ -1,1 +1,0 @@
-Response details: {"id":23,"category":{"id":6163,"name":"string"},"name":"Oskar_6163","photoUrls":["string"],"tags":[{"id":6163,"name":"IN_6163"}],"status":"Available"}

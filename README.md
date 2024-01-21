@@ -23,6 +23,8 @@ Rest Assured Automation Framework with **Java 8**, **TestNG** and **Cucumber** i
 
 #### Run Tests
 * Run `mvn clean test`
+* To execute specific tags from command line we can use `mvn test -Dcucumber.filter.tags="@Sanity"`.
+* We support two tags - `@Sanity` `@All_E2E`
 
 #### Generate Allure Report
 * Run `mvn allure:serve` or `mvn allure:report`

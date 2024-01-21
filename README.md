@@ -9,3 +9,18 @@ Rest Assured Automation Framework with **Java 8**, **TestNG** and **Cucumber** i
 5. Allure Reports
 6. SLF4J Logger
 7. CI/CD - Github Actions
+
+## Getting Started Instructions
+### Clone to local
+* Run `git clone https://github.com/srthorat/petstore.git` 
+
+### Set up Dependencies 
+* Assuming that local setups for Maven and Java are already in place
+* Run `mvn clean install`
+
+### Run Tests
+* Run `mvn clean test`
+
+### See Allure Report
+* Assuming that local setup for Allure report is in place
+* Run `allure serve`

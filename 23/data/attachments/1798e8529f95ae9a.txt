@@ -1,0 +1,1 @@
+{id=99996, name=doggie_by_ms, photoUrls=[string], tags=[{id=0, name=string}], status=available}

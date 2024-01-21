@@ -1,0 +1,1 @@
+Response details: {"id":99996,"category":{"id":1361,"name":"string"},"name":"Oskar_1361","photoUrls":["string"],"tags":[{"id":1361,"name":"IN_1361"}],"status":"Pending"}

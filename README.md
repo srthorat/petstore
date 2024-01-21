@@ -6,7 +6,7 @@ This framework is designed to automate API testing for the PetStore application.
   2. `src/test/java/io/swagger/petstore/data`: Includes CommonData.java for managing common test data. 
   3. `src/test/java/io/swagger/petstore/stepdefinitions`: Holds Cucumber step definitions, including Hooks.java for setup and teardown. 
   4. `src/test/java/io/swagger/petstore/utils`: Contains utility methods in Utils.java. 
-  5. `src/test/resources`: Includes Cucumber feature files, JSON schemas, and
+  5. `src/test/resources`: Includes Cucumber feature files, JSON schemas, and configuration properties.
   
 ## Tech Stack
 1. [Java 8](https://www.oracle.com/java/technologies/java8.html)

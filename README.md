@@ -19,36 +19,36 @@ This framework is designed to automate API testing for the PetStore application.
 
 ## Getting Started Instructions
 ### Run Locally and view Allure report
-#### Clone to local
+#### Step 1: Clone to local
 * Run `git clone https://github.com/srthorat/petstore.git` 
 
-#### Set up Dependencies 
+#### Step 2: Set up Dependencies 
 * Assuming that local setups for Maven and Java are already in place
 * If not refer [Java 8 Setup](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html), [Maven Setup](https://www.baeldung.com/install-maven-on-windows-linux-mac)
 * Goto to Project repo `cd <BasePath>/petstore`
 * Run `mvn clean install`
 
-#### Run Tests
+#### Step 3: Run Tests
 * Run `mvn clean test`
 * To execute specific tags from command line we can use `mvn test -Dcucumber.filter.tags="@Sanity"`.
 * We support two tags - `@Sanity` `@All_E2E`
 
-#### Generate Allure Report
+#### Step 4: Generate Allure Report
 * Run `mvn allure:serve` or `mvn allure:report`
 * Report will be generated into temp folder. Web server with results will start.
 
 ### Run Test using Github Action CI/CD and view Allure report
-* Go to Actions tab - [Actions](https://github.com/srthorat/petstore/actions)
-* From the left, below All workflows select the workflow - [Java CI with Maven](https://github.com/srthorat/petstore/actions/workflows/petstore-ci.yml)
-* A `Run workflow` dropdown will appear on the right, Select it, then choose `branch - main`, and click `Run Workflow`.
-* Refresh Page
-* You can now see - `Java CI with Maven` job is running, While completes, open Java CI with Maven to monitor the test 
-running status and view logs.
-* Once the `Java CI with Maven` job complete, the `pages build and deployment with artifacts-next` job will start 
-running automatically, wait for it to complete.
-* Once the `pages build and deployment with artifacts-next` gets completes, double-click on job name.
-* You can now see job details, You can see stages like `build ===> report-build-status` and `build ===> deploy`
-* On the deploy stage, find the link - https://srthorat.github.io/petstore. Open this link to view the Allure report 
+1. Go to Actions tab - [Actions](https://github.com/srthorat/petstore/actions)
+2. From the left, below All workflows select the workflow - [Java CI with Maven](https://github.com/srthorat/petstore/actions/workflows/petstore-ci.yml)
+3. A `Run workflow` dropdown will appear on the right, Select it, then choose `branch - main`, and click `Run Workflow`. 
+4. Refresh Page 
+5. You can now see - `Java CI with Maven` job is running, While completes, open Java CI with Maven to monitor the test 
+running status and view logs. 
+6. Once the `Java CI with Maven` job complete, the `pages build and deployment with artifacts-next` job will start 
+running automatically, wait for it to complete. 
+7. Once the `pages build and deployment with artifacts-next` gets completes, double-click on job name. 
+8. You can now see job details, You can see stages like `build ===> report-build-status` and `build ===> deploy`
+9. On the deploy stage, find the link - https://srthorat.github.io/petstore. Open this link to view the Allure report 
 summary for the last run.
 
 ## Adding new Test cases

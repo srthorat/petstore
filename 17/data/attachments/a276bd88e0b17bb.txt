@@ -1,1 +1,0 @@
-{"photoUrls":["string"],"name":"Oskar_1846","id":9223372036854756378,"category":{"name":"string","id":1846},"tags":[{"name":"IN_1846","id":1846}],"status":"Available"}

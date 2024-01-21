@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Jan 21 08:23:13 GMT 2024","Sun Jan 21 08:23:14 GMT 2024","81","Command line suite","Command line test","test.runner.TestRunner","test.runner.TestRunner","runScenario","Runs Cucumber Scenarios",""
+"passed","Sun Jan 21 08:23:12 GMT 2024","Sun Jan 21 08:23:13 GMT 2024","1299","Command line suite","Command line test","test.runner.TestRunner","test.runner.TestRunner","runScenario","Runs Cucumber Scenarios",""
+"passed","Sun Jan 21 08:23:13 GMT 2024","Sun Jan 21 08:23:13 GMT 2024","136","Command line suite","Command line test","test.runner.TestRunner","test.runner.TestRunner","runScenario","Runs Cucumber Scenarios",""

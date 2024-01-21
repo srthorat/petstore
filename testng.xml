@@ -1,0 +1,11 @@
+<suite name="Swagger Pet Store API Tests" verbose="1">
+    <listeners>
+        <listener class="io.qameta.allure.testng.AllureTestNg">
+        </listener>
+    </listeners>
+    <test name="Cucumber Tests">
+        <classes>
+            <class name="test.runner.TestRunner"/>
+        </classes>
+    </test>
+</suite>

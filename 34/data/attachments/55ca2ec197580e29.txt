@@ -1,0 +1,1 @@
+Response details: {"id":456,"category":{"id":2711,"name":"string"},"name":"Oskar_2711","photoUrls":["string"],"tags":[{"id":2711,"name":"IN_2711"}],"status":"Sold"}

@@ -10,7 +10,6 @@ import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.testng.Assert;
 
-import java.math.BigInteger;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
@@ -81,14 +80,13 @@ public class PetStoreStepDefinitions extends BaseTest {
 
     @When("^the user makes a PUT request to the endpoint (.+) with updated details")
     public void whenTheUserMakesPutRequestWithUpdatedDetails(String path) {
-        BigInteger petID = new BigInteger(savedPetId);
+        long petID = Long.parseLong(savedPetId);
         int randomNumber = new Random().nextInt(9999) + 1;
         String name = "Oskar_" + randomNumber;
         String[] statuses = {"Available", "Sold", "Pending"};
         String randomStatus = statuses[new Random().nextInt(statuses.length)];
-        int tagID = randomNumber;
         String tagName = "IN_" + randomNumber;
-        updatePetPayload = createPetJsonBody(petID, name, randomStatus, tagID, tagName);
+        updatePetPayload = createPetJsonBody(petID, name, randomStatus, randomNumber, tagName);
         // Make PUT request
         response = given()
                 .spec(requestSpec)
@@ -119,7 +117,7 @@ public class PetStoreStepDefinitions extends BaseTest {
 
     @When("^When the user makes a GET request to the endpoint (.+)")
     public void whenTheUserMakesGetRequestToPetEndpoint(String path) {
-        BigInteger petID = new BigInteger(savedPetId);
+        long petID = Long.parseLong(savedPetId);
         log.info("Step: Preparing to make a GET request to retrieve details for PET ID: {}", petID);
         response = given()
                 .spec(requestSpec)

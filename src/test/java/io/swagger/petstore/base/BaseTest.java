@@ -14,18 +14,21 @@ public class BaseTest {
 
     @BeforeSuite
     public void setUp() {
-        // Set the base URL
-        baseUrl = "https://petstore.swagger.io/v2";
-        log.info("Base Rest API URL initialised to: " + baseUrl);
+        try {
+            // Set the base URL
+            baseUrl = "https://petstore.swagger.io/v2";
+            log.info("Base Rest API URL initialized to: " + baseUrl);
 
-        // Set up REST-Assured
-        requestSpec = RestAssured.given()
-                .baseUri(baseUrl);
-
+            // Set up REST-Assured
+            requestSpec = RestAssured.given().baseUri(baseUrl);
+        } catch (Exception e) {
+            log.error("Error during test setup: " + e.getMessage());
+        }
     }
 
     @AfterSuite
     public void tearDown() {
         // teardown
+        log.info("Teardown activities completed.");
     }
 }

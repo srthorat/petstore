@@ -33,7 +33,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         distribution: 'maven'
-        java-version: '4.0'
+        java-version: '4.0.0'
 
     - name: Build with Maven
       run: mvn clean install -B

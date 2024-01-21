@@ -29,13 +29,15 @@ Rest Assured Automation Framework with **Java 8**, **TestNG** and **Cucumber** i
 
 ### Run Test using Github Action CI/CD and view Allure report
 * Go to Actions tab - [Actions](https://github.com/srthorat/petstore/actions)
-* From Left, Below All workflows Select Workflow - [Java CI with Maven](https://github.com/srthorat/petstore/actions/workflows/petstore-ci.yml)
-* `Run workflow` dropdown will appear in right, Select that, then Keep `branch - main`, Hit `Run Workflow`
+* From the left, below All workflows select the workflow - [Java CI with Maven](https://github.com/srthorat/petstore/actions/workflows/petstore-ci.yml)
+* A `Run workflow` dropdown will appear on the right, Select it, then choose `branch - main`, and click `Run Workflow`.
 * Refresh Page
-* You can now see - `Java CI with Maven` job is running, wait for it complete
-* Once `Java CI with Maven` job gets complete, the `pages build and deployment with artifacts-next` job will start 
-running automatically, wait for it complete.
-* Once `pages build and deployment with artifacts-next` gets complete, double-click on job name.
+* You can now see - `Java CI with Maven` job is running, While completes, open Java CI with Maven to monitor the test 
+running status and view logs.
+* Once the `Java CI with Maven` job complete, the `pages build and deployment with artifacts-next` job will start 
+running automatically, wait for it to complete.
+* Once the `pages build and deployment with artifacts-next` gets completes, double-click on job name.
 * You can now see job details, You can see stages like `build ===> report-build-status` and `build ===> deploy`
-* On deploy stage you can see link - https://srthorat.github.io/petstore, Open this link you can see Allure report 
-summary for last run
+* On the deploy stage, find the link - https://srthorat.github.io/petstore. Open this link to view the Allure report 
+summary for the last run.
+

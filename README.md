@@ -62,3 +62,46 @@ summary for the last run.
 ### Step 3: Run the Test
 1. Run your test suite to execute the new test case.
 2. Verify that the test case runs successfully and produces the expected outcomes.
+
+## Troubleshooting Guide
+### 1. General Issues
+* Issue: Unable to run tests successfully.
+* Solution:
+  1. Ensure that the necessary dependencies are installed.
+  2. Verify that the API is accessible.
+  3. Check the correctness of test data and configurations.
+### 2. Dependency Issues
+* Issue: Maven build fails due to dependency issues.
+* Solution:
+  1. Check your `pom.xml `file for correct dependencies and versions.
+  2. Run `mvn clean install` to download and install dependencies.
+### 3. API Connection Issues
+* Issue: Tests fail due to inability to connect to the API. 
+* Solution:
+  1. Check the API base URL in the `BaseTest.java` class.
+  2. Verify network connectivity.
+  3. Ensure the API is running and accessible.
+### 4. Failed API Requests
+* Issue: Tests fail due to API request issues.
+* Solution:
+  1. Inspect the request details in the test logs. 
+  2. Check the request headers, body, and parameters. 
+  3. Ensure that the request format and data are correct.
+### 5. JSON Schema Validation Failures
+* Issue: JSON schema validation fails. 
+* Solution:
+  1. Verify that the expected JSON schema file exists. 
+  2. Check for any discrepancies between the response and the schema. 
+  3. Update the schema file if necessary.
+### 6. Step Definition Ambiguities
+* Issue: Cucumber reports duplicate step definitions. 
+* Solution:
+  1. Ensure each step definition has a unique signature. 
+  2. Check for duplicate step definitions with similar patterns. 
+  3. Adjust step definitions to avoid conflicts.
+### 7. Updating Test Data
+* Issue: Need to update test data for new scenarios. 
+* Solution:
+  1. Update the feature file with new scenarios and steps.
+  2. Implement corresponding step definitions in PetStoreStepDefinitions.java. 
+  3. Ensure any necessary data (e.g., API endpoints, expected responses) is updated.

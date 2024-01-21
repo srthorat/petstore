@@ -1,0 +1,1 @@
+{id=2, category={id=0, name=gfdgdfg}, name=doggie, photoUrls=[string], tags=[{id=2, name=gfdgdfg}], status=available}

@@ -42,3 +42,13 @@ running automatically, wait for it to complete.
 * On the deploy stage, find the link - https://srthorat.github.io/petstore. Open this link to view the Allure report 
 summary for the last run.
 
+## Adding new Test cases
+### Create a New Feature File
+1. Navigate to the src/test/resources/features directory.
+2. Create a new file named NewTestCase.feature.
+   `Example NewTestCase.feature:
+     Feature: New Test Case 
+       Scenario: Description of the new scenario 
+       Given some initial conditions
+       When an action is performed
+       Then the expected outcome is verified`
